@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application pour surveiller la consommation quotidienne de sel et réduire les risques d'hypertension.">
+    <meta property="og:title" content="Selzen - Réduisez votre consommation de sel">
+    <meta property="og:description" content="Une application pour surveiller votre consommation de sel et lutter contre l'hypertension.">
+    <meta property="og:image" content="/assets/preview.png">
+    <meta property="og:url" content="https://selzen.lovable.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selzen - Surveillance du Sel</title>
+</head>
+<body>
+    <header class="hero">
+        <h1>Selzen</h1>
+        <p>Surveillez votre consommation de sel et protégez votre santé !</p>
+        <a href="#features" class="cta">Découvrir l'application</a>
+        <a href="https://fedecardio.org" class="info-link">Pourquoi surveiller le sel ?</a>
+    </header>
+    <main>
+        <section id="features" class="features">
+            <h2>Fonctionnalités</h2>
+            <div class="feature-card">
+                <img src="assets/track.png" alt="Suivi quotidien">
+                <h3>Suivi quotidien</h3>
+                <p>Recevez des rappels pour gérer votre consommation de sel chaque jour.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/alerts.png" alt="Alertes personnalisées">
+                <h3>Alertes personnalisées</h3>
+                <p>Obtenez des notifications en cas de dépassement de votre limite.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Selzen. Tous droits réservés.</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(() => console.log('Service Worker Registered'));
+        }
+    </script>
+</body>
+</html>

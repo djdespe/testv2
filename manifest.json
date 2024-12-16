@@ -1,0 +1,22 @@
+{
+    "name": "Selzen - Surveillance du Sel",
+    "short_name": "Selzen",
+    "description": "Application pour surveiller la consommation quotidienne de sel et réduire le risque d'hypertension.",
+    "start_url": "/index.html",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#e0f7fa",
+    "theme_color": "#0288d1",
+    "icons": [
+        {
+            "src": "/assets/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
